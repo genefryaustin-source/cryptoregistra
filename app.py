@@ -123,9 +123,7 @@ elif mode == "📝 Register Entity":
 
 elif mode == "🔍 Search Registry":
     st.title("Search Public Registry")
-    # ... keep your existing search code
-
-# Keep the rest of your code (Analytics, About, functions, etc.) unchanged
+     
     st.caption(f"Live on Ethereum Mainnet • Schema: {SCHEMA_UID[:20]}...")
 
     if st.button("🔄 Refresh from Ethereum Mainnet"):
