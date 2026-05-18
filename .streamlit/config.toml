@@ -1,0 +1,9 @@
+[theme]
+base = "dark"
+primaryColor = "#00bfff"          # Bright blue (matches your logo)
+backgroundColor = "#0a0f1c"
+secondaryBackgroundColor = "#121a2e"
+textColor = "#e0f0ff"
+
+[server]
+enableCORS = false
