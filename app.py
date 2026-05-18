@@ -12,9 +12,23 @@ st.set_page_config(
     page_icon="🔗",
     layout="wide"
 )
+# ====================== LOGO HEADER ======================
+col1, col2 = st.columns([1, 4])
+
+with col1:
+    st.image("logo.png", width=180)
+
+with col2:
+    st.markdown("""
+    <h1 style='margin-bottom:0;'>Crypto Registra</h1>
+    <p style='margin-top:0;color:gray;'>
+    Global Registry for Crypto Exchanges, Web3 Platforms & Recovery Companies
+    </p>
+    """, unsafe_allow_html=True)
 
 SCHEMA_UID = "0x5a18963db219ed409d6e5fc7778784c36ab337def788cbc76aabe3258cc7ffa"
 GRAPHQL_URL = "https://easscan.org/graphql"
+
 
 # ====================== REGULATORY VALIDATION ======================
 @st.cache_data(ttl=3600)
